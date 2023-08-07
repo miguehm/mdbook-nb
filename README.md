@@ -11,7 +11,7 @@ This plugin add two commands to `nb` for initialize and run a server in a notebo
 # Installation
 
 ```bash
-nb plugins install 
+nb plugins install https://raw.githubusercontent.com/miguehm/mdbook-nb/main/mdbook.nb-plugin
 ```
 
 # How to use
@@ -22,7 +22,7 @@ Initialize a mdbook inside a notebook
 nb initbook
 ```
 
-Run a server
+Run a server in the current notobook
 
 ```bash
 nb servebook
