@@ -8,7 +8,7 @@ Usage:
   nb servebook
 
 Description:
-  Run a server using mdbook in actual notebook path
+  Run a server using mdbook in the current notebook.
 
 Example:
   nb servebook
@@ -20,7 +20,7 @@ Usage:
   nb initbook
 
 Description:
-  Initialize a mdbook inside actual notebook path
+  Initialize a mdbook inside the current notebook.
 
 Example:
   nb initbook
