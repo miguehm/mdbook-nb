@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+_subcommands add "servebook"
+_subcommands add "initbook"
+
+_subcommands describe "servebook" <<HEREDOC
+Usage:
+  nb servebook
+
+Description:
+  Run a server using mdbook in actual notebook path
+
+Example:
+  nb servebook
+  
+HEREDOC
+
+_subcommands describe "initbook" <<HEREDOC
+Usage:
+  nb initbook
+
+Description:
+  Initialize a mdbook inside actual notebook path
+
+Example:
+  nb initbook
+  
+HEREDOC
+
+_servebook(){
+  local _path="$(_notebooks current --path)"
+  mdbook serve "${_path}"
+}
+
+_initbook(){
+  local _path="$(_notebooks current --path)"
+  mdbook init "${_path}"
+}
